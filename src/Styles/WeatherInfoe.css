@@ -1,0 +1,72 @@
+.weatherInfoe-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tired{
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(255, 63, 207);
+    height: 50vh;
+    border-radius: 10px;
+}
+.temperature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 3rem;
+    color: white;
+    background-color: rgb(255, 63, 207);
+}
+.heading h1{
+    font-size: 7rem;
+    line-height: 0;
+    font-family: 'Titillium Web', sans-serif;
+    color: blueviolet;
+
+}
+.heading p{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    color: rgb(255, 63, 207);
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 10vw;
+    height: 4rem;
+    margin: 2rem;
+    padding: .5rem;
+}
+.details span{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    font-weight: 900;
+}
+.details p{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    color: blueviolet;;
+}
