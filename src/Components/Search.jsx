@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { MdOutlinePersonSearch } from "react-icons/md";
 import "../Styles/Search.css";
 
 const Search = () => {

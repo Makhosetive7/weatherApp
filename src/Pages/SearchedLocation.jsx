@@ -3,13 +3,14 @@ import { useParams } from 'react-router-dom';
 import { useGetWeatherByCityQuery } from '../Services/WeatherAPI';
 import { Link } from 'react-router-dom';
 import "../Styles/WeatherInfoe.css"
+import Loading from './Loading';
 
 const SearchedLocation = () => {
   const { city } = useParams();
 
   const { data: weather, error, isLoading } = useGetWeatherByCityQuery(city);
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <div><Loading/></div>;
   if (error) return <div>Error: {error.message}</div>;
 
   return (
