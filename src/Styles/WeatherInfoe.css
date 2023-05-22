@@ -4,12 +4,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-.tired{
+.search-component{
+    margin-bottom: 3rem;
+}
+.back-component{
+    margin-bottom: 3rem;
+}
+.back-component button{
+    width: 20vw;
+    font-size: 1rem;
+    font-family: 'Titillium Web', sans-serif;
+    color: blueviolet;
+    border:rgb(255, 63, 207) ;
+}
+.back-component button:hover{
+    background-color: rgb(255, 63, 207) ;
+    color: white;
+}
+.weatherInfoe-elements{
     display: flex;
     justify-content: center;
     border: 2px solid rgb(255, 63, 207);
-    height: 50vh;
     border-radius: 10px;
 }
 .temperature{
@@ -17,6 +34,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 5rem;
 }
 .location{
     display: flex;
@@ -45,6 +63,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
 }
 .details{
@@ -55,8 +74,6 @@
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
     border-radius: 5px;
     font-size: 1rem;
-    width: 10vw;
-    height: 4rem;
     margin: 2rem;
     padding: .5rem;
 }

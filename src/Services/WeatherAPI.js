@@ -6,11 +6,14 @@ const weatherApi = createApi({
    endpoints:(builder) => ({
     GetWeatherByLocation: builder.query({
         query: ({ lat, lon }) => `weather?lat=${lat}&lon=${lon}&appid=d4463f8c41ffced9143ae123e17aa7fd`,
-    })
+    }),
+    GetWeatherByCity: builder.query({
+        query: (city) => `weather?q=${city}&appid=d4463f8c41ffced9143ae123e17aa7fd`,
+      }),
    })
 })
 
 
 
-export const { useGetWeatherByLocationQuery } = weatherApi;
+export const { useGetWeatherByLocationQuery, useGetWeatherByCityQuery } = weatherApi;
 export default weatherApi;

@@ -1,44 +1,21 @@
-import React, { useEffect, useState } from "react";
-import { useGetWeatherByLocationQuery } from "../Services/WeatherAPI";
-import Loading from "./Loading";
-import Search from "../Components/Search";
-import "../Styles/WeatherInfoe.css";
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import { useGetWeatherByCityQuery } from '../Services/WeatherAPI';
+import { Link } from 'react-router-dom';
+import "../Styles/WeatherInfoe.css"
 
-const WeatherInfoe = () => {
-  const [location, setLocation] = useState("");
+const SearchedLocation = () => {
+  const { city } = useParams();
 
-  useEffect(() => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition((position) => {
-        const lat = position.coords.latitude;
-        const lon = position.coords.longitude;
-        setLocation({ lat, lon });
-      });
-    } else {
-      console.log("Geolocation is not supported by this browser.");
-    }
-  }, []);
+  const { data: weather, error, isLoading } = useGetWeatherByCityQuery(city);
 
-  const {
-    data: weather,
-    error,
-    isLoading,
-  } = useGetWeatherByLocationQuery(location, {
-    skip: !location,
-  });
-
-  if (isLoading)
-    return (
-      <div>
-        <Loading />
-      </div>
-    );
+  if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
 
   return (
     <div className="weatherInfoe-container">
-      <div className="search-component">
-        <Search />
+      <div className="back-component">
+        <Link to="/weatherInfoe"><button>&#8634; Navigate-Back</button></Link>
       </div>
       {weather && (
         <div className="weatherInfoe-elements">
@@ -80,4 +57,4 @@ const WeatherInfoe = () => {
   );
 };
 
-export default WeatherInfoe;
+export default SearchedLocation;
