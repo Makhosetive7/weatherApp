@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useGetWeatherByLocationQuery } from "../Services/WeatherAPI";
 import "../Styles/WeatherInfoe.css";
+import Loading from "./Loading";
+
 const WeatherInfoe = () => {
   const [location, setLocation] = useState("");
 
@@ -24,7 +26,7 @@ const WeatherInfoe = () => {
     skip: !location,
   });
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <div><Loading/></div>;
   if (error) return <div>Error: {error.message}</div>;
 
   return (
@@ -45,23 +47,23 @@ const WeatherInfoe = () => {
             <div className="bottom">
                 <div className="details">
                     <span>Pressure</span>
-                    <p>{weather.main.pressure}°K</p>
+                    <p>{weather.main.pressure}hPa</p>
                 </div>
                 <div className="details">
                     <span>Temperature-Min</span>
-                    <p>{weather.main.temp_min}°K</p>
+                    <p>{weather.main.temp_min}°c</p>
                 </div>
                 <div className="details">
-                    <span>Temperatur-Max</span>
-                    <p>{weather.main.temp_max}°K</p>
+                    <span>Temperature-Max</span>
+                    <p>{weather.main.temp_max}°c</p>
                 </div>
                 <div className="details">
                     <span>Humidity</span>
-                    <p>{weather.main.humidity}°K</p>
+                    <p>{weather.main.humidity}%</p>
                 </div>
                 <div className="details">
                     <span>wind Speed</span>
-                    <p>{weather.wind.speed}</p>
+                    <p>{weather.wind.speed}m/s</p>
                 </div>
             </div>
           </div>

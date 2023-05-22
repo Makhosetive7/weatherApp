@@ -1,0 +1,31 @@
+.home-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.home-container .home-content{
+    border-right: 10px solid rgb(137, 43, 224);
+    border-radius: 5px;
+    padding: 5rem;
+}
+.home-container .home-content p{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 5rem;
+    color: rgb(255, 63, 207);
+}
+.home-container .home-content button{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.5rem;
+    width: 10vw;
+    height: 4rem;
+    background-color: transparent;
+    color: rgb(255, 63, 207);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    border-radius: 7px ;
+}
+.home-container .home-content button:hover{
+    background-color:rgb(137, 43, 224) ;
+    color: white;
+}
