@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Name: **Makhosetive Sibanda**
+## Project Title: **Weather App** 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Project Description 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Weather App was built using ReactJS and Redux Toolkit Query to create a user-friendly platform for users to check the weather forecast based on currentlocation. The app fetches weather data from the Open Weather API and displays it in a clean and responsive design, making it easy for users to access information on various weather-related topics. The app features a search bar, weather cards, and a panel displaying the current weather forcast.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Key Features
 
-## Available Scripts
++ Search bar for users to enter a location and get the weather forecast
++ Weather cards displaying the current weather for multiple locations
++ Panel showing the current weather for each entered location
++ Redux Toolkit Query integration for easy API calls
++ Geolocation using the Navigator interface to fetch weather data based on the user's location
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Key lesson Learnt From Building this Project
 
-In the project directory, you can run:
+During the development of this project, the following concepts and technologies were utilized:
 
-### `npm start`
++ React Router: Handling client-side routing in React applications
++ Redux Toolkit Query: Fetching weather data from the Open Weather API
++ Responsiveness of Web Pages: Ensuring the app works well on various screen sizes
++ Geolocation API: Fetching weather data based on the user's location
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Getting Started with Weather App
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To install and run the Weather App locally, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
++ Clone the repository: git clone <your-repo-url>
++ Navigate to the project directory: cd <your-project-folder>
++ Install dependencies: npm install
++ Start the development server: npm start
