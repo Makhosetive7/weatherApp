@@ -26,7 +26,7 @@ During the development of this project, the following concepts and technologies 
 
 To install and run the Weather App locally, follow these steps:
 
-+ Clone the repository: git clone <your-repo-url>
-+ Navigate to the project directory: cd <your-project-folder>
++ [Clone the repository](https://github.com/Makhosetive7/weatherApp)
++ Navigate to the project directory: cd weatherApp
 + Install dependencies: npm install
 + Start the development server: npm start
