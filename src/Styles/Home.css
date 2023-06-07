@@ -9,6 +9,7 @@
     border-right: 10px solid rgb(137, 43, 224);
     border-radius: 5px;
     padding: 5rem;
+    margin: 5rem;
 }
 .home-container .home-content p{
     font-family: 'Roboto Mono', monospace;
@@ -18,8 +19,7 @@
 .home-container .home-content button{
     font-family: 'Titillium Web', sans-serif;
     font-size: 1.5rem;
-    width: 10vw;
-    height: 4rem;
+    padding: 1rem;
     background-color: transparent;
     color: rgb(255, 63, 207);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;

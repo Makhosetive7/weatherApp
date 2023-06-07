@@ -1,22 +1,34 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import { useGetWeatherByCityQuery } from '../Services/WeatherAPI';
-import { Link } from 'react-router-dom';
-import "../Styles/WeatherInfoe.css"
-import Loading from './Loading';
+import React from "react";
+import { useParams } from "react-router-dom";
+import { useGetWeatherByCityQuery } from "../Services/WeatherAPI";
+import { Link } from "react-router-dom";
+import "../Styles/WeatherInfoe.css";
+import Loading from "./Loading";
 
 const SearchedLocation = () => {
   const { city } = useParams();
 
-  const { data: weather, error, isLoading } = useGetWeatherByCityQuery(city);
+  const {
+    data: weather,
+    error,
+    isLoading,
+    isFetching,
+  } = useGetWeatherByCityQuery(city);
 
-  if (isLoading) return <div><Loading/></div>;
+  if (isLoading || isFetching)
+    return (
+      <div>
+        <Loading />
+      </div>
+    );
   if (error) return <div>Error: {error.message}</div>;
 
   return (
     <div className="weatherInfoe-container">
       <div className="back-component">
-        <Link to="/weatherInfoe"><button>&#8634; Navigate-Back</button></Link>
+        <Link to="/weatherInfoe">
+          <button>&#8634; Navigate-Back</button>
+        </Link>
       </div>
       {weather && (
         <div className="weatherInfoe-elements">
@@ -24,9 +36,11 @@ const SearchedLocation = () => {
             <h3>{weather.name}</h3>
           </div>
           <div className="temperature">
-            <div className="heading">
-              <h1>{weather.main.temp}°c</h1>
-              <p>{weather.weather[0].description}</p>
+            <div className="top">
+              <div className="heading">
+                <h1>{weather.main.temp}°c</h1>
+                <p>{weather.weather[0].description}</p>
+              </div>
             </div>
 
             <div className="bottom">

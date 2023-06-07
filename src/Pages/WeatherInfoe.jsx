@@ -46,9 +46,11 @@ const WeatherInfoe = () => {
             <h3>{weather.name}</h3>
           </div>
           <div className="temperature">
+            <div className="top">
             <div className="heading">
               <h1>{weather.main.temp}°c</h1>
               <p>{weather.weather[0].description}</p>
+            </div>
             </div>
 
             <div className="bottom">

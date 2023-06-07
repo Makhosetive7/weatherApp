@@ -1,10 +1,10 @@
 .weatherInfoe-container{
     width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 3rem;
 }
 .search-component{
     margin-bottom: 3rem;
@@ -13,8 +13,8 @@
     margin-bottom: 3rem;
 }
 .back-component button{
-    width: 20vw;
-    font-size: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
     font-family: 'Titillium Web', sans-serif;
     color: blueviolet;
     border:rgb(255, 63, 207) ;
@@ -28,14 +28,9 @@
     justify-content: center;
     border: 2px solid rgb(255, 63, 207);
     border-radius: 10px;
-}
-.temperature{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     margin: 5rem;
 }
+
 .location{
     display: flex;
     justify-content: center;
@@ -59,9 +54,10 @@
     font-size: 2rem;
     color: rgb(255, 63, 207);
 }
-.bottom{
+
+.top, .bottom{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
@@ -74,8 +70,9 @@
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
     border-radius: 5px;
     font-size: 1rem;
-    margin: 2rem;
-    padding: .5rem;
+    width: 15rem;
+    margin: 1rem;
+    padding-top: .5rem;
 }
 .details span{
     font-family: 'Roboto Mono', monospace;
@@ -86,4 +83,23 @@
     font-family: 'Titillium Web', sans-serif;
     font-weight: bold;
     color: rgb(137, 43, 224);
+}
+
+@media screen and (max-width: 800px) {
+    .weatherInfoe-elements{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border: 2px solid rgb(255, 63, 207);
+        border-radius: 10px;
+    }
+    .location{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 3rem;
+        color: white;
+        background-color: rgb(255, 63, 207);
+    }
 }
