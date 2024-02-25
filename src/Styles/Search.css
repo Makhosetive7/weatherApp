@@ -3,10 +3,10 @@ input {
   box-sizing: border-box;
   border-radius: 4px;
   padding: 1rem 4rem;
-  border: 2px solid rgb(137, 43, 224);
-  margin-bottom: 1.5rem;
+  border:2px solid rgb(255, 63, 207) ;
   font-size: 14px;
   font-family: "Aldrich", sans-serif;
+  color:  blueviolet;
 }
 input:active {
   transition: 0.3s all;

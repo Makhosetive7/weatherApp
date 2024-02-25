@@ -4,6 +4,7 @@ import { useGetWeatherByCityQuery } from "../Services/WeatherAPI";
 import { Link } from "react-router-dom";
 import "../Styles/WeatherInfoe.css";
 import Loading from "./Loading";
+import Error from "./Error";
 
 const SearchedLocation = () => {
   const { city } = useParams();
@@ -17,17 +18,17 @@ const SearchedLocation = () => {
 
   if (isLoading || isFetching)
     return (
-      <div>
+      <div className="weatherInfoe-container">
         <Loading />
       </div>
     );
-  if (error) return <div>Error: {error.message}</div>;
+  if (error) return <div><Error/></div>;
 
   return (
     <div className="weatherInfoe-container">
       <div className="back-component">
         <Link to="/weatherInfoe">
-          <button>&#8634; Navigate-Back</button>
+          &#8634; Navigate-Back
         </Link>
       </div>
       {weather && (

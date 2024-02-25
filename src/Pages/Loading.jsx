@@ -14,6 +14,7 @@ const Loading = () => {
         wrapperClassName=""
         visible={true}
       />
+      <p>Loading Weather information....</p>
     </div>
   );
 };
