@@ -27,7 +27,7 @@ const SearchedLocation = () => {
   return (
     <div className="weatherInfoe-container">
       <div className="back-component">
-        <Link to="/weatherInfoe">
+        <Link to="/">
           &#8634; Navigate-Back
         </Link>
       </div>

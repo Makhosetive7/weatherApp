@@ -10,7 +10,7 @@ const Error = () => {
           <GiTerror />
         </span>
         <p>ooooops Data is no data available at the moment....</p>
-        <NavLink to="/weatherInfoe">Navigate Home</NavLink>
+        <NavLink to="/">Navigate Home</NavLink>
       </div>
   );
 };

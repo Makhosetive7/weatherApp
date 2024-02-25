@@ -37,8 +37,9 @@
     writing-mode: vertical-rl;
     text-orientation: sideways-right;
     font-family: 'Roboto Mono', monospace;
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
+    font-weight: 900;
     background-color: rgb(255, 63, 207);
 }
 .heading{
@@ -99,6 +100,7 @@
     }
     .location{
         writing-mode: horizontal-tb;
+        font-size: 1.5rem;
     }
 
 }
