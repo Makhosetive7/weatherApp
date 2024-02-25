@@ -24,7 +24,7 @@
 }
 .weatherInfoe-elements{
     display: flex;
-    border: 2px solid rgb(255, 63, 207);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     margin: 1rem;
     border-radius: 10px;
     width: 70vw;
