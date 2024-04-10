@@ -1,19 +1,17 @@
-# Name: **Makhosetive Sibanda**
 ## Project Title: **Weather App** 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Project Description 
+### Description 
+Weather App built with **ReactJS and Redux Toolkit Query** for user-friendly weather forecasts based on current location. Fetches data from **Open Weather API**, presenting it in a clean, responsive design with search bar, weather cards, and current forecast panel.
 
-This Weather App was built using ReactJS and Redux Toolkit Query to create a user-friendly platform for users to check the weather forecast based on currentlocation. The app fetches weather data from the Open Weather API and displays it in a clean and responsive design, making it easy for users to access information on various weather-related topics. The app features a search bar, weather cards, and a panel displaying the current weather forcast.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Key Features
-
-+ Search bar for users to enter a location and get the weather forecast
-+ Weather cards displaying the current weather for multiple locations
+### Features
++ Search bar facilitates weather forecast location input
++ Weather cards show current weather for multiple locations
 + Panel showing the current weather for each entered location
 + Redux Toolkit Query integration for easy API calls
 + Geolocation using the Navigator interface to fetch weather data based on the user's location
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Key lesson Learnt From Building this Project
+### Lesson
 
 During the development of this project, the following concepts and technologies were utilized:
 
