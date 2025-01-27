@@ -6,16 +6,16 @@
     flex-direction: column;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    height: 90vh;
+    height: auto;
 }
 .wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
-    border: 10px solid red;
-    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: green;
+    height: auto;
 }
 .search-component{
     margin-bottom: 1rem;
@@ -43,7 +43,7 @@
     font-size: 2rem;
     color: white;
     font-weight: 900;
-    background-color: rgb(255, 63, 207);
+    background-color: black;
 }
 .heading{
     display: flex;
@@ -55,55 +55,61 @@
     font-size: 5rem;
     line-height: 0;
     font-family: 'Titillium Web', sans-serif;
-    color: blueviolet;
 }
 .heading p{
     font-family: 'Roboto Mono', monospace;
     font-size: 2rem;
-    color: rgb(255, 63, 207);
 }
-.bottom{
+.bottom {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
- .bottom .details{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: .5rem;
-    margin: .5rem;
- }
-
- .bottom .details span{
-    color: blueviolet;
-    font-weight: 900;
-    display: flex;
-    align-items: center;
- }
- .bottom .details p{
-    color: rgb(255, 63, 207);
-    font-weight: 500;
- }
-@media screen and (max-width: 800px) {
-    .weatherInfoe-elements{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        border: 2px solid rgb(255, 63, 207);
-        border-radius: 10px;
-        padding: 2rem;
-    }
-    .bottom{
-        display: flex;
-        flex-direction: column;
-    }
-    .location{
-        writing-mode: horizontal-tb;
-        font-size: 1.5rem;
-    }
-
+    margin: 1rem;
+    gap: 5rem; 
+    padding: 1.5rem;
 }
+
+.humidity,
+.windSpeed,
+.pressure,
+.minimumTemperature,
+.maximumTemperature {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    font-weight: 900;
+    text-align: center; 
+    padding: 2rem;
+    border: 2px solid red; 
+}
+
+.humidity svg,
+.windSpeed svg,
+.pressure svg,
+.minimumTemperature svg,
+.maximumTemperature svg {
+    height: 10vH;
+    width: auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .bottom {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .humidity,
+    .windSpeed,
+    .pressure,
+    .minimumTemperature,
+    .maximumTemperature {
+        flex: 1 1 100%; 
+        margin-bottom: 1rem;
+    }
+}
+
