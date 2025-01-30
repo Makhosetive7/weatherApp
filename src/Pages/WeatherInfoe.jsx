@@ -63,7 +63,7 @@ const WeatherInfoe = () => {
             <div className="bottom">
               <div className="humidity">
                 <h3>Humidity</h3>
-                <p>{weather.main.humidity}%</p>
+                <h1>{weather.main.humidity}%</h1>
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +95,7 @@ const WeatherInfoe = () => {
 
               <div className="windSpeed">
                 <h3>Wind Speed</h3>
-                <p>{weather.wind.speed}m/s</p>
+                <h1>{weather.wind.speed}m/s</h1>
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +147,7 @@ const WeatherInfoe = () => {
 
               <div className="pressure">
                 <h3>Pressure</h3>
-                <p>{weather.main.pressure} hPa</p>
+                <h1>{weather.main.pressure} hPa</h1>
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -214,7 +214,7 @@ const WeatherInfoe = () => {
 
               <div className="minimumTemperature">
                 <h3>Minimum Temperature</h3>
-                <p>{weather.main.temp_min.toFixed(3)}°C</p>
+                <h1>{weather.main.temp_min.toFixed(3)}°C</h1>
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -277,7 +277,7 @@ const WeatherInfoe = () => {
 
               <div className="maximumTemperature">
                 <h3>Maximum Temperature:</h3>
-                <span>{weather.main.temp_max.toFixed(3)}°C</span>
+                <h1>{weather.main.temp_max.toFixed(3)}°C</h1>
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

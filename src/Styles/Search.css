@@ -1,18 +1,54 @@
+.search-container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px; 
+  width: 30vw;
+  opacity: 0.9;
+}
 
 input {
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 1rem 4rem;
-  border:2px solid rgb(255, 63, 207) ;
-  font-size: 14px;
-  font-family: "Aldrich", sans-serif;
-  color:  blueviolet;
+  height: 3rem;
+  width: 60%; 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+  padding: 0.5rem; 
+  margin-bottom: 1rem; 
 }
+
 input:active {
   transition: 0.3s all;
   transform: translateY(3px);
   opacity: 0.8;
 }
+
 input:focus {
-    color: rgb(255, 63, 207);
+  color: black;
+  outline: none; 
+  box-shadow: 0 0 5px rgba(255, 63, 207, 0.5);
+}
+
+button {
+  color: black; 
+  background-color: transparent;
+  border: none;
+  height: 2rem;
+  border-radius: 4px;
+  width: 60%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1.5rem;
+  padding: 0 1rem; 
+}
+
+button:hover {
+  background-color: black; 
+  color: white;
+  transform: scale(1.05);
 }

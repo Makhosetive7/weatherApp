@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { CiSearch } from "react-icons/ci";
 import "../Styles/Search.css";
 
 const Search = () => {
@@ -29,6 +30,7 @@ const Search = () => {
         onChange={handleSeachedLocation}
         onKeyUp={handleKeyPress}
       />
+      <button><CiSearch/></button>
     </div>
   );
 };
