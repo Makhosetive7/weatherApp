@@ -4,9 +4,40 @@ import Loading from "./Loading";
 import Search from "../Components/Search";
 import "../Styles/WeatherInfoe.css";
 import Error from "./Error";
+import cloudySpring from "../Svg/cloudy-spring-svgrepo-com.svg";
+import nightForecast from "../Svg/night-forecast-svgrepo-com.svg";
+import snowingForecast from "../Svg/snowing-forecast-svgrepo-com.svg";
+import rainForecast from "../Svg/rain-forecast-svgrepo-com.svg";
+import winterSeason from "../Svg/winter-season-svgrepo-com.svg";
+import tornadoHurricane from "../Svg/tornado-hurricane-svgrepo-com.svg";
+import sunset from "../Svg/sunset-svgrepo-com.svg";
 
 const WeatherInfoe = () => {
+  // List of imported SVGs
+  const image = [
+    cloudySpring,
+    nightForecast,
+    snowingForecast,
+    rainForecast,
+    winterSeason,
+    tornadoHurricane,
+    sunset,
+  ];
+
   const [location, setLocation] = useState("");
+  const [backgroundImage, setBackgroundImage] = useState("");
+
+  // Function to randomly select background image
+  const getRandomImage = () => {
+    const randomIndex = Math.floor(Math.random() * image.length);
+    return image[randomIndex];
+  };
+
+  // Set background image on component mount
+  useEffect(() => {
+    const randomImage = getRandomImage();
+    setBackgroundImage(randomImage);
+  }, []);
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -29,12 +60,12 @@ const WeatherInfoe = () => {
   });
 
   if (isLoading || !weather)
-    // Show loading indicator until data is fetched
     return (
       <div className="weatherInfoe-container">
         <Loading />
       </div>
     );
+
   if (error)
     return (
       <div>
@@ -44,7 +75,15 @@ const WeatherInfoe = () => {
 
   return (
     <div className="weatherInfoe-container">
-      <div className="wrapper">
+      <div
+        className="wrapper"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          fontSize: "24px",
+        }}
+      >
         <div className="search-component">
           <Search />
         </div>

@@ -15,69 +15,13 @@
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     height: auto;
-    min-height: 500px; /* Ensure the wrapper has enough height to display icons */
+    min-height: 500px;
     background-color: #f9f9f9;
     border: 2px solid pink;
     padding: 1rem;
     border-radius: 8px;
-    position: relative;
     overflow: hidden;
 }
-
-.wrapper::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: 
-      url('/src/Svg/cloudy-spring-svgrepo-com.svg'),
-      url('/src/Svg/night-forecast-svgrepo-com.svg'),
-      url('/src/Svg/snowing-forecast-svgrepo-com.svg'),
-      url('/src/Svg/rain-forecast-svgrepo-com.svg'),
-      url('/src/Svg/winter-season-svgrepo-com.svg'),
-      url('/src/Svg/tornado-hurricane-svgrepo-com.svg'),
-      url('/src/Svg/summer-season-svgrepo-com.svg'),
-      url('/src/Svg/weather-svgrepo-com.svg'),
-      url('/src/Svg/weather-color-moon-cloud-light-svgrepo-com.svg'),
-      url('/src/Svg/weather-icons-68-svgrepo-com.svg'),
-      url('/src/Svg/weather-storm-svgrepo-com.svg'),
-      url('/src/Svg/weather-cloudy-svgrepo-com.svg'),
-      url('/src/Svg/weather-sun-svgrepo-com.svg'),
-      url('/src/Svg/sunset-svgrepo-com.svg'),
-      url('/src/Svg/winter-season-svgrepo-com.svg'),
-      url('/src/Svg/tornado-hurricane-svgrepo-com.svg'),
-      url('/src/Svg/summer-season-svgrepo-com.svg'),
-      url('/src/Svg/cloudy-spring-svgrepo-com.svg'),
-      url('/src/Svg/night-forecast-svgrepo-com.svg'),
-      url('/src/Svg/snowing-forecast-svgrepo-com.svg'),
-      url('/src/Svg/rain-forecast-svgrepo-com.svg'),
-      url('/src/Svg/winter-season-svgrepo-com.svg'),
-      url('/src/Svg/weather-svgrepo-com.svg'),
-      url('/src/Svg/weather-color-moon-cloud-light-svgrepo-com.svg');
-    background-repeat: no-repeat;
-    background-size: 90px; 
-    animation: scatterIcons 10s infinite ease-in-out;
-    opacity: 40%;
-}
-
-@keyframes scatterIcons {
-    0%, 100% {
-        background-position: 
-          5% 65%, 20% 15%, 35% 25%, 50% 10%, 65% 20%, 
-          80% 75%, 95% 15%, 90% 50%, 25% 60%, 40% 70%, 
-          55% 80%, 70% 90%, 85% 75%, 95% 50%, 10% 90%;
-    }
-    50% {
-        background-position: 
-          10% 10%, 25% 20%, 40% 30%, 55% 15%, 70% 25%, 
-          85% 10%, 100% 20%, 15% 55%, 30% 65%, 45% 75%, 
-          60% 85%, 75% 95%, 90% 80%, 100% 55%, 15% 95%;
-    }
-}
-
-
 .search-component{
     margin-bottom: 1rem;
     margin-top: 1rem;
